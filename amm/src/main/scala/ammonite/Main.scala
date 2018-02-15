@@ -283,7 +283,7 @@ object Main{
               runner.runCode(code)
 
             case (None, Nil) =>
-              runner.printInfo("Loading...")
+//              runner.printInfo("Loading...")
               runner.runRepl()
               true
 

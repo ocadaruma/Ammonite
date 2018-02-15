@@ -186,7 +186,7 @@ class Repl(input: InputStream,
         colors()
       ) match{
         case None =>
-          printer.outStream.println()
+//          printer.outStream.println()
           loop()
         case Some(value) => value
       }
@@ -218,7 +218,7 @@ object Repl{
                 colors: Colors): Option[Any] = {
     res match{
       case Res.Exit(value) =>
-        printInfo("Bye!")
+//        printInfo("Bye!")
         Some(value)
       case Res.Failure(msg) =>
         printError(msg)
